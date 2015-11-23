@@ -1,0 +1,18 @@
+[
+  '{{repeat(1, 99999)}}',
+  {
+    _id: '{{objectId()}}',
+    index: '{{index()}}',
+    isActive: '{{bool()}}',
+    picture: 'http://placehold.it/32x32',
+    name: '{{firstName()}} {{surname()}}',
+    address: '{{integer(100, 999)}} {{street()}}, {{city()}}, {{state()}}, {{integer(100, 10000)}}',
+    latitude: '{{floating(-90.000001, 90)}}',
+    longitude: '{{floating(-180.000001, 180)}}',
+    location: {
+      type: 'Point',
+      coordinates: [ '{{floating(-43.13464472988278, -43.56860469082028)}}', '{{floating(-21.846680281561877, -21.660458249481888)}}' 
+                    ]
+    }
+  }
+]
